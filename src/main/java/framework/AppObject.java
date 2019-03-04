@@ -5,14 +5,8 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.NoSuchFrameException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class AppObject {
 	private String locator;
@@ -111,13 +105,13 @@ public class AppObject {
 	}
 
 	private MobileElement locateElement(String locator) {
-		// Depended on locator type, use proper findBy (ex. if starts with xpath=, use findByXpath, etc.)
+		// Depended on locator type, use proper By (ex. if starts with xpath=, use driver.findElement(By.xpath(locator)), etc.)
 		return null;
 	}
 
 
 	private List<MobileElement> locateElements() {
-		// Depended on locator type, use proper findBy (ex. if starts with xpath=, use findByXpath, etc.)
+		// Depended on locator type, use proper By (ex. if starts with xpath=, use driver.findElement(By.xpath(locator)), etc.)
 		return null;
 	}
 

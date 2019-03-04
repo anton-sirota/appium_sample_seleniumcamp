@@ -18,8 +18,8 @@ public class LoginScreen extends BasePage {
 	protected AppObject loginButton;
 
 	public void loginWithUser() {
-		loginInput.type("somename");
-		passwordInput.type("somepass");
+		loginInput.type("getNameFromConfig");
+		passwordInput.type("getPassFromConfig");
 		loginButton.tap();
 	}
 
